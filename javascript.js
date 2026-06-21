@@ -62,13 +62,13 @@ function deleteNum(n) {
     return n.slice(0, -1);
 }
 
-//All buttons logic
+// All buttons logic
 let keys = document.querySelectorAll(".char");
 keys.forEach(key => {
-    key.addEventListener("mouseover", () => key.style.backgroundColor = '  #e6e6e6')
-    key.addEventListener("mouseout", () => key.style.backgroundColor = 'white')
-    key.addEventListener("mousedown", () => key.style.backgroundColor = '#cccccc')
-    key.addEventListener("mouseup", () => key.style.backgroundColor = '#e6e6e6')
+    key.addEventListener("mouseover", () => key.style.filter = 'brightness(0.85)')
+    key.addEventListener("mouseout", () => key.style.filter = '')
+    key.addEventListener("mousedown", () => key.style.filter = 'brightness(0.75)')
+    key.addEventListener("mouseup", () => key.style.filter = 'brightness(0.85)')
 
 })
 
@@ -138,11 +138,16 @@ del.addEventListener("click", () => {
 
 let pt = document.querySelector(".pt");
 pt.addEventListener("click", () => {
+    
     if(!oper) {
+        if(n1.includes("."))
+            return;
         n1 = String(n1) + ".";
         setDisplay(n1);
     }
     else {
+        if(n2.includes("."))
+            return;
         n2 = String(n2) + ".";
         setDisplay(n2);
     }

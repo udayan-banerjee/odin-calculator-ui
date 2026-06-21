@@ -48,3 +48,30 @@ body {
     flex-direction: row;
     gap: 10px;
 }
+
+/* Colors */
+body {
+    background-color: #232136;
+}
+.result {
+    background-color: #2a273f;
+    border: solid 2px #6e6a86;
+    color: #e0def4;
+}
+.char {
+    background-color: #2a273f;
+    border: solid 2px #6e6a86;
+    color: #e0def4;
+}
+.del, .clr {
+    background-color: #eb6f92;
+    color: #232136;
+}
+.oper {
+    background-color: #9ccfd8;
+    color: #232136;
+}
+.ans {
+    background-color: #c4a7e7;
+    color: #232136;
+}

@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    margin: 0px;
+    margin: 0px; 
 }
 
 .main-container {
@@ -24,6 +24,7 @@ body {
     justify-content: flex-end;
     font-size: 50px;
     padding: 15px 25px;
+    overflow: auto;
 }
 
 .ops {
